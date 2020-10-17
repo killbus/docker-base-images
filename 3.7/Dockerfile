@@ -1,4 +1,4 @@
-FROM baseware/python-uvloop:latest
+FROM baseware/python-uvloop:3.7
 
 RUN set -eux; \
     \
