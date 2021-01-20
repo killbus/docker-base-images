@@ -4,6 +4,8 @@ on:
   push:
     branches: python-ruia
 
+  workflow_dispatch:
+
 jobs:
   multi:
     runs-on: ubuntu-latest
