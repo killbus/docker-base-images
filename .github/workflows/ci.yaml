@@ -38,8 +38,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           builder: ${{ steps.buildx.outputs.name }}
-          context: .
-          file: ./3.7/Dockerfile
+          context: ./3.7/
           platforms: linux/amd64
           push: true
           tags: |
@@ -53,8 +52,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           builder: ${{ steps.buildx.outputs.name }}
-          context: .
-          file: ./3.7/Dockerfile
+          context: ./3.7/
           platforms: linux/arm64,linux/amd64
           push: true
           tags: |
@@ -65,8 +63,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           builder: ${{ steps.buildx.outputs.name }}
-          context: .
-          file: ./3.6/Dockerfile
+          context: ./3.6/
           platforms: linux/amd64
           push: true
           tags: |
@@ -76,8 +73,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           builder: ${{ steps.buildx.outputs.name }}
-          context: .
-          file: ./3.6/Dockerfile
+          context: ./3.6/
           platforms: linux/arm64,linux/amd64
           push: true
           tags: |
