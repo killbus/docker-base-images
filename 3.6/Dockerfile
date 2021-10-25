@@ -12,6 +12,7 @@ RUN set -eux; \
         libcurl \
     "; \
     \
+    apk upgrade --no-cache; \
     apk add --no-cache --virtual .build-deps $buildDeps \
       $runDeps \
     ; \
