@@ -13,6 +13,7 @@ RUN set -eux; \
         libxml2-dev \
     "; \
     \
+    apk upgrade --no-cache; \
     apk add --no-cache --virtual .build-deps \
         $runDeps \
         $buildDeps \
