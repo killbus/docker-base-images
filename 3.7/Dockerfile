@@ -6,6 +6,7 @@ RUN set -eux; \
         build-base \
     "; \
     \
+    apk upgrade --no-cache; \
     apk add --no-cache --virtual .build-deps \
         $buildDeps \
     ; \
