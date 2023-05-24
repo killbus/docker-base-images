@@ -3,6 +3,7 @@ name: ci
 on:
   push:
     branches: python-lxml
+  workflow_dispatch:
 
 jobs:
   multi:
